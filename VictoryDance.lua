@@ -9,7 +9,7 @@ local enabled = true
 local emote = '/dance1 motion'
 local last_dance_time = 0
 local COOLDOWN = 4.0 -- seconds between flourishes
-local FLOURISH_DELAY = 2.0 -- wait 2.0 seconds for combat disengage & sheathe animation
+local FLOURISH_DELAY = 2.5 -- wait 2.5 seconds for combat disengage & sheathe animation
 
 local last_target_id = nil
 
