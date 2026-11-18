@@ -106,18 +106,18 @@ windower.register_event('addon command', function(cmd, ...)
         windower.add_to_chat(207, '[VictoryDance] Testing flourish: ' .. emote)
         windower.chat.input(emote)
 
-    -- [DEMO FEATURE: Uncomment below to demonstrate git diff / commit on GitHub]
-    -- elseif cmd == 'motion' or cmd == 'emote' then
-    --     local new_emote = table.concat(args, ' ')
-    --     if new_emote and #new_emote > 0 then
-    --         if new_emote:sub(1, 1) ~= '/' then
-    --             new_emote = '/' .. new_emote
-    --         end
-    --         emote = new_emote
-    --         windower.add_to_chat(207, '[VictoryDance] Emote set to: ' .. emote)
-    --     else
-    --         windower.add_to_chat(207, '[VictoryDance] Current emote: ' .. emote)
-    --     end
+    [DEMO FEATURE: Uncomment below to demonstrate git diff / commit on GitHub]
+    elseif cmd == 'motion' or cmd == 'emote' then
+        local new_emote = table.concat(args, ' ')
+        if new_emote and #new_emote > 0 then
+            if new_emote:sub(1, 1) ~= '/' then
+                new_emote = '/' .. new_emote
+            end
+            emote = new_emote
+            windower.add_to_chat(207, '[VictoryDance] Emote set to: ' .. emote)
+        else
+            windower.add_to_chat(207, '[VictoryDance] Current emote: ' .. emote)
+        end
 
     else
         windower.add_to_chat(207, '[VictoryDance] Commands: //vd on | //vd off | //vd test')
